@@ -28,7 +28,7 @@ public class Brick : MonoBehaviour
     {
         hits--;
 
-        //score
+        GameManager.Instance.Score += points;
         if (hits < -0)
         {
             // Destroy() is a predefined variable that you can access to this game object to destory the object
